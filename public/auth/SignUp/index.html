@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Free Fire Community Plus+</title>
+
+    <!--Font by Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!---Own css sheet-->
+    <link rel="stylesheet" href="/src/css/signup.css">
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <main id="main-content">
+        <section class="d-none d-md-none d-lg-block left-container">
+            <div class="login-left-content">
+                <div class="login-slogan">
+                    <h1>Welcome to <br>Free Fire Community Plus+</h1>
+                    <div class="underline-container">
+                        <span id="underline"></span>
+                    </div>
+                    <p>Join, Connect, Play and Earn rewards.</p>
+                    <p style="font-size: min(max(0.6rem, 0.9vw), 20px);">&copy; 2021 FFC by Oxonio</p>
+                </div>
+            </div>
+        </section>
+        <section id="login-container">
+           <div id="form-outline">
+            <div class="login-form pt-3">
+                <div class="login-header text-center">
+                    <h2>Create an Account</h2>
+                </div>
+                <div class="error-container">
+                    <span id="head-error-message"></span>
+                </div>
+                <div id="login-form">
+                    <!--First name-->
+                    <label for="fullname" id="name-label">
+                        First Name <span class="required">*</span>
+                        <div class="error-container d-inline">
+                            <span id="first-name-error-message"></span>
+                        </div>
+                    </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="John" required>
+
+                    <!--Last name-->
+                    <label for="lastname" id="name-label">
+                        Last Name <span class="required">*</span>
+                        <div class="error-container d-inline">
+                            <span id="last-name-error-message"></span>
+                        </div>
+                    </label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+
+                    <!--Email-->
+                    <label for="email" id="email-label">
+                        Email <span class="required">*</span>
+                        <div class="error-container d-inline">
+                            <span id="email-error-message"></span>
+                        </div>
+                    </label>
+
+                    <input type="email" name="email" id="email" placeholder="john@example.com" required>
+
+                    <!--Password-->
+                    <label for="password" id="password-label">
+                        Password <span class="required">*</span>
+                        <div class="error-container d-inline">
+                            <span id="password-error-message"></span>
+                        </div>
+                    </label>
+
+                    <div class="password-container">
+                        <input type="password" name="passowrd" id="password" placeholder="Must have at 6 characters"
+                            required>
+                    </div>
+
+                    <!-- Agree -->
+                    <div class="error-container d-inline">
+                        <span id="agree-error-message"></span>
+                    </div>
+                    <div class="agree-container">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree" id="agree-label">I'm agree to <a href="#"> privacy policy</a> and <a
+                                href="#"> T&C</a> <span class="required">*</span></label>
+                    </div>
+
+                    <div class="register-btn">
+                        <input type="submit" value="Sign Up" id="login-btn" onclick="register()">
+                    </div>
+                    <div class="login-account-short-link">
+                        <p>Already have an account?<a href="/public/auth/LogIn/"> Login here</a>.</p>
+                        <span id="currentUser"></span>
+                    </div>
+                </div>
+            </div>
+           </div>
+           
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js ">
+</script>
+
+<script type="text/javascript" src="/src/js/signup.js"></script>
+
+</html>
