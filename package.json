@@ -1,0 +1,21 @@
+{
+  "name": "ffc-plus",
+  "version": "1.0.0",
+  "description": "Free Fire Community Plus",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^9.0.1",
+    "firebase-admin": "^9.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FFC",
+    "Plus"
+  ],
+  "author": "Mani Kandan",
+  "license": "ISC"
+}

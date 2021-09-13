@@ -1,0 +1,108 @@
+:root {
+    --font: 'Montserrat', sans-serif;
+    --primar-green: #00c87c;
+    --dark-black: #121212;
+    --primary-white: #fff;
+    --charcoal: #181818cb;
+    --light-white: #ffffffc1;
+}
+
+.welcome-section {
+    width: 100vw;
+    height: min(max(1.6rem, 56vw), 400px) !important;
+    background: rgb(153, 158, 153);
+    background: linear-gradient(#f7f7f72c, #14211177 80%), url(https://dl.dir.freefiremobile.com/common/web_event/hash/a0e7426e068ddf3d26fc7072e44c0d08jpg);
+    /* The least supported option. */
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    position: relative;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 100vw;
+    height: min(max(1rem, 60vw), 400px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.welcome-text>h2 {
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--primary-white);
+    font-size: min(max(1.2rem, 3vw), 32px);
+    text-shadow: 5px 2px 30px var(--charcoal);
+    text-align: center;
+}
+
+.welcome-text>p {
+    color: var(--primary-white);
+    font-family: var(--font);
+    margin-top: 15px;
+    font-size: min(max(0.6rem, 1.7vw), 15px);
+    text-shadow: 5px 30px 20px var(--charcoal);
+}
+
+#our-members {
+    background: url(https://1g3v9y2l2llh2lksnu1v316y-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/big-ol-topo.png) no-repeat center center;
+    background-size: cover;
+    background-size: 100%;
+    margin-top: min(max(3rem, 1vh), 80px);
+    padding: 20px;
+}
+
+.join-btn {
+    border: none;
+    background-color: var(--primar-green);
+    font-family: var(--font);
+    font-weight: 600;
+    padding: 10px 15px;
+    color: var(--primary-white);
+    border-radius: 5px;
+    font-size: min(max(0.6rem, 1vw), 12px);
+}
+
+.join-btn:hover {
+    background-color: #05bcef !important;
+    cursor: pointer !important;
+}
+
+.join-btn:focus {
+    outline: none;
+}
+
+/*------------------ Intro no 1 --------------------*/
+
+.total-member-info {
+    margin-top: 12vh;
+}
+
+.total-member-info-title>span {
+    font-family: var(--font);
+    font-size: min(max(0.6rem, 2vw), 14px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+#total-members-info {
+    font-family: var(--font);
+    font-size: min(max(2rem, 3.4vw), 56px);
+    font-weight: 700;
+    color: var(--primar-green);
+    letter-spacing: 2px;
+}
+
+.sub-tag>span {
+    text-transform: uppercase;
+    font-size: min(max(0.6rem, 2vw), 14px);
+    font-family: var(--font);
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    margin-top: 8px;
+}

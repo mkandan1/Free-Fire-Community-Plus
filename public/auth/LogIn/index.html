@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Free Fire Community Plus+</title>
+
+    <!--Font by Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!---Own css sheet-->
+    <link rel="stylesheet" href="/src/css/login.css">
+
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <main id="main-content">
+        <section class="d-none d-md-none d-lg-block left-container">
+            <div class="login-left-content">
+                <div class="login-slogan">
+                    <h1>Welcome to <br>Free Fire Community Plus+</h1>
+                    <div class="underline-container">
+                        <span id="underline"></span>
+                    </div>
+                    <p>Join, Connect, Play and Earn rewards.</p>
+                    <p style="font-size: min(max(0.6rem, 0.9vw), 20px);">&copy; 2021 FFC by Oxonio</p>
+                </div>
+            </div>
+        </section>
+        <section id="login-container">
+            <div id="form-outline">
+                <div class="login-form pt-4">
+                    <div class="login-header text-center">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="error-container">
+                        <span id="head-error-message"></span>
+                    </div>
+                    <div id="login-form">
+                        <!--Email-->
+                        <label for="email" id="email-label">
+                            Email
+                            <div class="error-container d-inline">
+                                <span id="email-error-message"></span>
+                            </div>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="john@example.com" required>
+                        <br>
+
+                        <!--Password-->
+                        <label for="password" id="password-label">
+                            Password
+                            <div class="error-container d-inline">
+                                <span id="password-error-message"></span>
+                            </div>
+                        </label>
+                        <div class="password-container">
+                            <input type="password" name="passowrd" id="password" placeholder="Must have at 6 characters"
+                                required>
+                        </div>
+
+                        <!--- Login Button-->
+                        <div class="login-btn">
+                            <input type="submit" value="Login" id="login-btn" onclick="login()">
+                        </div>
+                        <div class="create-account-short-link">
+                            <p>Not a member yet?<a href="/public/auth/SignUp/"> Join now</a>.</p>
+                            <span id="currentUser"></span>
+                        </div>
+                        <div class="forget-password-short-link text-right">
+                            <input type="button" value="Forget Password" onclick="forgetPassword()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<script type="text/javascript" src="/src/js/login.js"></script>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Community Plus+</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="" id="favicon" type="image/x-icon">
+    <!-- own css files -->
+    <link rel="stylesheet" href="/src/css/home-main.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <!-- Bootstrap 4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <header class="header-scroll-status">
+        <nav class="container nav-bar">
+            <div class="logo-container">
+                <h1>FFC+</h1>
+            </div>
+
+            <div class="menu">
+                <div class="mobile-menu d-lg-none">
+                    <div class="hamburger-menu">
+                        <span class="material-icons">
+                            menu
+                        </span>
+                    </div>
+                    <input type="checkbox" name="menu" id="mobile-menu-toggle">
+                </div>
+                <div class="menu-link d-none d-lg-block">
+                    <ul>
+                        <li><a href="#our-members">Home</a></li>
+                        <li><a href="/public/community/index.html">Community</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">My Account
+
+                                <span class="material-icons arrow-down">
+                                    expand_more
+                                </span>
+                            </button>
+                            <div class="dropdown-content" id="dropdown-content">
+                                <a href="#" class="non-ls-component d-none">Account</a>
+                                <a href="#" class="non-ls-component d-none">Wallet</a>
+                                <a href="#" class="non-ls-component d-none" onclick="logout()">Log out</a>
+                                <a href="/public/auth/LogIn" class="ls-component d-block">Login or Sign Up</a>
+                            </div>
+                        </div>
+                        <!--<li><img src="#" alt="User profile"></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slide-disabled" id="menu-list">
+            <span class="material-icons close">
+                close
+            </span>
+            <div class="user-login-panel d-inline-block">
+                <a href="/public/auth/LogIn/">Login or Sign Up</a>
+            </div>
+
+            <div class="user-info-01 d-none">
+                <span id="user-full-name"></span>
+                <br>
+                <span id="user-email-id"></span>
+                <a href="#" onclick="logout()">
+                    <p class="mobile-log-out mt-2">Log Out <span class="material-icons">
+                            logout
+                        </span>
+                    </p>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="/public/community/index.html">Community</a></li>
+                <li><a href="#">My Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="welcome-section">
+            <div class="welcome-text">
+                <h2>Welcome to Free Fire Community Plus+</h2>
+                <p>The community of Free Fire Esports</p>
+            </div>
+        </div>
+        <section id="our-members">
+            <div class="container intro-container">
+                <div class="total-member-info text-center">
+                    <div class="total-member-info-title">
+                        <span>Join our</span>
+                    </div>
+                    <div class="total-member-content">
+                        <span id="total-members-info"><strong>0</strong></span>
+                    </div>
+                    <div class="sub-tag">
+                        <span>Members</span>
+                    </div>
+                    <div class="join-btn-container mt-4">
+                        <button class="join-btn">Become a Member</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </main>
+
+    <!--Bootstrap 4 Js files-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--Own Js files-->
+    <script src="/src/js/mobile-menu-toggle.js"></script>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+
+<script src="/src/js/favicon.js"></script>
+<script src="/src/js/main.js"></script>
+
+</html>

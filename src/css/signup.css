@@ -1,0 +1,195 @@
+:root {
+    --font: 'Montserrat', sans-serif;
+    --primary-green: #00c870;
+    --primary-orange: #ffa500;
+    --shadow-black: #1c1c1c;
+    --light-black: #c4c4c4;
+    --light-black-2: #797979f0;
+    --light-white: #d7d7d7;
+    --light-blue: #00c8ff09;
+    --white: #fff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+    background-color: var(--light-blue) !important;
+    display: inline;
+    overflow-y: hidden;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    margin-right: 40vw;
+}
+
+.login-left-content {
+    width: 33.3vw;
+    height: 100vh;
+    display: inline-block;
+    background: linear-gradient(rgba(29, 38, 113, 0), rgba(55, 33, 40, 0.8) 75%), url("https://wallpapercave.com/wp/wp3144263.jpg");
+    /* The least supported option. */
+    background-position: top-right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: fixed;
+}
+
+.login-slogan {
+    width: 28vw;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+    margin-bottom: min(max(3rem, 8vw), 250px);
+}
+
+.login-slogan h1 {
+    text-shadow: 0 3px 25px var(--shadow-black);
+    color: #fff;
+    width: 15vw;
+    letter-spacing: 0.6px;
+    font-size: min(max(1.4rem, 2.2vw), 58px);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.underline-container {
+    position: relative;
+}
+
+.login-slogan #underline:after {
+    content: "";
+    position: absolute;
+    background: var(--primary-orange);
+    height: 5px;
+    width: 70px;
+    bottom: 0;
+}
+
+.login-slogan p {
+    letter-spacing: 0.5px;
+    color: var(--light-white);
+    font-weight: 600;
+    font-size: min(max(0.3rem, 1vw), 27px);
+    margin-top: 30px;
+}
+
+/*=============Login form style===================*/
+
+#login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-outline {
+    border: 1px solid #00000021;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 50px !important;
+    background-color: var(--white);
+    transform: scale(0.8)
+}
+
+.error-container>span {
+    color: #ff0000;
+    line-height: 18px;
+    font-size: min(max(0.7rem, 1vw), 11px);
+}
+
+.required {
+    color: #ff000080;
+}
+
+.login-form {
+    align-self: center;
+    margin-bottom: 60px;
+}
+
+.login-header h2 {
+    font-size: min(max(1rem, 1.6vw), 40px);
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--shadow-black);
+}
+
+#email-label, #password-label, #phone-number-label, #name-label, #username-label, #otp-validation-label {
+    display: block;
+    font-weight: 500;
+    color: var(--light-black-2);
+    font-size: min(max(0.7rem, 1vw), 23px);
+    margin-bottom: 7px;
+}
+
+#login-form input {
+    width: min(max(18rem, 25vw), 950px);
+    height: min(max(2.6rem, 3.2vw), 65px);
+    padding-left: 15px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: min(max(0.7rem, 1vw), 23px);
+    color: var(--shadow-black);
+}
+
+#login-form ::placeholder {
+    color: var(--light-black);
+    font-size: min(max(0.7rem, 1vw), 22px);
+}
+
+#first-name, #last-name, #email, #password {
+    border: 1px solid #a5a5a5;
+    flex-grow: 2;
+}
+
+#first-name:focus, #last-name:focus, #email:focus, #password:focus {
+    border: 1px solid var(--primary-green);
+    outline: 0;
+    border-radius: 2px;
+}
+
+.agree-container>input[type="checkbox"] {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 10px;
+}
+
+.agree-container>label {
+    font-size: min(max(0.7rem, 0.9vw), 22px) !important;
+}
+
+.register-btn {
+    margin-top: 10px;
+}
+
+.register-btn>input[type="submit"] {
+    background-color: var(--primary-green);
+    outline: 0;
+    border: none;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.forget-password-short-link a {
+    font-size: min(max(0.7rem, 1vw), 17px);
+}
+
+.forget-password-short-link a:hover {
+    text-decoration: none;
+}
+
+.login-account-short-link {
+    margin-top: 10px;
+}
+
+.login-account-short-link p {
+    font-size: min(max(0.7rem, 1vw), 25px);
+    font-family: var(--font) !important;
+}
