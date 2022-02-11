@@ -1,12 +1,6 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyC3JOXNs46bBAMyqBcHKfPTOB8OVl5naKI",
-    authDomain: "free-fire-community-a793a.firebaseapp.com",
-    projectId: "free-fire-community-a793a",
-    storageBucket: "free-fire-community-a793a.appspot.com",
-    messagingSenderId: "559176829952",
-    appId: "1:559176829952:web:90e8ef9569184f32325ce5",
-    databaseURL: "https://free-fire-community-a793a-default-rtdb.firebaseio.com/"
+    // Enter Firebase Configuration here
 };
 
 
